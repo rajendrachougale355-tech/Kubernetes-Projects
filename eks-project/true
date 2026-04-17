@@ -1,0 +1,16 @@
+{
+    "repository": {
+        "repositoryArn": "arn:aws:ecr:ap-south-1:556791123713:repository/mastery-backend",
+        "registryId": "556791123713",
+        "repositoryName": "mastery-backend",
+        "repositoryUri": "556791123713.dkr.ecr.ap-south-1.amazonaws.com/mastery-backend",
+        "createdAt": "2026-04-12T07:46:03.684000+00:00",
+        "imageTagMutability": "MUTABLE",
+        "imageScanningConfiguration": {
+            "scanOnPush": false
+        },
+        "encryptionConfiguration": {
+            "encryptionType": "AES256"
+        }
+    }
+}

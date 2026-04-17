@@ -1,0 +1,20 @@
+---
+- name: Install and Start Nginx
+  hosts: my_servers
+  become: true  # This means "Run as sudo"
+  
+  tasks:
+    - name: Update apt cache
+      apt:
+        update_cache: yes
+
+    - name: Install Nginx
+      apt:
+        name: nginx
+        state: latest
+
+    - name: Ensure Nginx is running
+      service:
+        name: nginx
+        state: started
+        enabled: yes
